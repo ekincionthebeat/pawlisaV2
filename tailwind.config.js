@@ -11,6 +11,9 @@ module.exports = {
         background: "#060606",
         foreground: "#ffffff",
       },
+      fontFamily: {
+        "press-start": ["var(--font-press-start-2p)"],
+      },
     },
   },
   plugins: [],
