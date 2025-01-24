@@ -4,11 +4,12 @@ import { Squares } from "@/components/onboarding/squares"
 import { NavBar } from "@/components/onboarding/nav-bar"
 import { Logo } from "@/components/onboarding/logo"
 import { Home, User, Settings } from "lucide-react"
+import { LampDemo } from "@/components/onboarding/lamp-demo"
 
 const navItems = [
   {
-    name: "Ana Sayfa",
-    url: "#home",
+    name: "Intro",
+    url: "#introductions",
     icon: Home,
   },
   {
@@ -39,8 +40,8 @@ export default function HomePage() {
       
       {/* Content */}
       <div className="relative z-10">
-        <section id="home" className="min-h-screen flex items-center justify-center bg-transparent">
-          <h1 className="text-4xl font-press-start">Ana Sayfa</h1>
+        <section id="introductions" className="min-h-screen flex items-center justify-center bg-transparent">
+          <LampDemo />
         </section>
         
         <section id="profile" className="min-h-screen flex items-center justify-center bg-transparent">

@@ -5,7 +5,8 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import { LucideIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { ConnectButton } from "./connect-button"
+import { ConnectButton } from "./connect/connect-button"
+import { ConnectedCatButton } from "./connect/connected-cat-button"
 
 interface NavItem {
   name: string
@@ -86,7 +87,7 @@ export function NavBar({ items, className }: NavBarProps) {
 
   return (
     <>
-      <ConnectButton />
+      <ConnectedCatButton />
       <div
         className={cn(
           "fixed bottom-0 sm:top-0 left-1/2 -translate-x-1/2 z-50 mb-6 sm:pt-6",
@@ -139,4 +140,4 @@ export function NavBar({ items, className }: NavBarProps) {
       </div>
     </>
   )
-} 
+}
