@@ -1,47 +1,27 @@
+// custom colors
+$iron: #263238; $blush: #F5C8BF; $rose: #D19487; $mauve: #B2738E; $slate: #577783; $mint: #8BB29A; $oak: #D1AE87; $grey: #C5C1C6;
+$g1: lighten($grey, 10%); $g2: lighten($grey, 2%); $g3: darken($grey, 15%); $hi: $blush; $wh: #fcfcfc; $bl: $iron; $bg: #fbe6e2;
 
-$iron: #263238;
-$blush: #f5c8bf;
-$rose: #d19487;
-$mauve: #b2738e;
-$slate: #577783;
-$mint: #8bb29a;
-$oak: #d1ae87;
-$grey: #c5c1c6;
-$g1: lighten($grey, 10%);
-$g2: lighten($grey, 2%);
-$g3: darken($grey, 15%);
-$hi: $blush;
-$wh: #fcfcfc;
-$bl: $iron;
-$bg: #fbe6e2;
-
-
+// url
 $url: "https://assets.codepen.io/345377/";
 
+// arrows
+$up: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVQokWP8//8/AymAiSTVA6dBzdgCp8cwNMAU49LEhE0xPpuY8EliE2ccBvEAAGLfEQE9MAhjAAAAAElFTkSuQmCC';
+$dn: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAOklEQVQokWP8//8/AymAiSTVdNHAAmOoGVvg9MytsycYsdnAiEUthji6k9A1YRiCzQ+MaDSq5DCIBwDz6goZAxDEewAAAABJRU5ErkJggg==';
+$lt: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQokWP8//8/AymAiSTVhDSoGVtgWI9TAzbFODXgUoxVAz7FWDXcOnuCkSQNhDTh9DQuTYwDG3HYAACS4BOhZHfptgAAAABJRU5ErkJggg==';
+$rt: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWElEQVQokWP8//8/AymAiSTVDAwMLOgCasYW/xkYGBhh/FtnTxBlA053Ymjg/vcTryYMDV+Z2PHahNPTUJsY0cVxavjKxI6hGJ8GrIoZGBgYGGkecSRrAABJOBMT7b9GFQAAAABJRU5ErkJggg==';
+$re: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAN0lEQVR4Ae3MgQUAMBRDwU5fFF05lb/CARTBw2Ulof0DxPtcwp3hNuEYnjbcEW4TjuFpwx3h9gMWGgZ2Y/PT2gAAAABJRU5ErkJggg==';
+$x: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOHB4IiBoZWlnaHQ9IjdweCIgdmlld0JveD0iMCAwIDggNyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgPHBvbHlnb24gc3Ryb2tlPSJub25lIiBmaWxsPSIjMjYzMjM4IiBwb2ludHM9IjMgMyAyIDMgMiAyIDEgMiAxIDEgMCAxIDAgMCAyIDAgMiAxIDMgMSAzIDIgNSAyIDUgMSA2IDEgNiAwIDggMCA4IDEgNyAxIDcgMiA2IDIgNiAzIDUgMyA1IDQgNiA0IDYgNSA3IDUgNyA2IDggNiA4IDcgNiA3IDYgNiA1IDYgNSA1IDMgNSAzIDYgMiA2IDIgNyAwIDcgMCA2IDEgNiAxIDUgMiA1IDIgNCAzIDQiPjwvcG9seWdvbj4KPC9zdmc+';
+$y: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iN3B4IiBoZWlnaHQ9IjdweCIgdmlld0JveD0iMCAwIDcgNyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxwb2x5Z29uIHN0cm9rZT0ibm9uZSIgZmlsbD0iIzI2MzIzOCIgcG9pbnRzPSI0IDYgMyA2IDMgNyAyIDcgMiA2IDEgNiAxIDUgMCA1IDAgMiAxIDIgMSAzIDIgMyAyIDQgMyA0IDMgMyA0IDMgNCAyIDUgMiA1IDEgNiAxIDYgMCA3IDAgNyAzIDYgMyA2IDQgNSA0IDUgNSA0IDUiPjwvcG9seWdvbj4KPC9zdmc+';
+$o: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjZweCIgdmlld0JveD0iMCAwIDYgNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxwb2x5Z29uIHN0cm9rZT0ibm9uZSIgZmlsbD0iIzI2MzIzOCIgcG9pbnRzPSI1IDAgNSAxIDYgMSA2IDUgNSA1IDUgNiAxIDYgMSA1IDAgNSAwIDEgMSAxIDEgMCI+PC9wb2x5Z29uPgo8L3N2Zz4=';
+$q: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjlweCIgdmlld0JveD0iMCAwIDYgOSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPGcgZmlsbD0iIzFBMkMzNCI+Cjxwb2x5Z29uIHBvaW50cz0iMyA0IDMgMyA0IDMgNCAxIDIgMSAyIDMgMCAzIDAgMSAxIDEgMSAwIDUgMCA1IDEgNiAxIDYgMyA1IDMgNSA0IDQgNCA0IDYgMiA2IDIgNCI+PC9wb2x5Z29uPgo8cmVjdCB4PSIyIiB5PSI3IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIj48L3JlY3Q+CjwvZz4KPC9zdmc+';
 
-$up: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVQokWP8//8/AymAiSTVA6dBzdgCp8cwNMAU49LEhE0xPpuY8EliE2ccBvEAAGLfEQE9MAhjAAAAAElFTkSuQmCC";
-$dn: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAOklEQVQokWP8//8/AymAiSTVdNHAAmOoGVvg9MytsycYsdnAiEUthji6k9A1YRiCzQ+MaDSq5DCIBwDz6goZAxDEewAAAABJRU5ErkJggg==";
-$lt: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVQokWP8//8/AymAiSTVhDSoGVtgWI9TAzbFODXgUoxVAz7FWDXcOnuCkSQNhDTh9DQuTYwDG3HYAACS4BOhZHfptgAAAABJRU5ErkJggg==";
-$rt: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWElEQVQokWP8//8/AymAiSTVDAwMLOgCasYW/xkYGBhh/FtnTxBlA053Ymjg/vcTryYMDV+Z2PHahNPTUJsY0cVxavjKxI6hGJ8GrIoZGBgYGGkecSRrAABJOBMT7b9GFQAAAABJRU5ErkJggg==";
-$re: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAN0lEQVR4Ae3MgQUAMBRDwU5fFF05lb/CARTBw2Ulof0DxPtcwp3hNuEYnjbcEW4TjuFpwx3h9gMWGgZ2Y/PT2gAAAABJRU5ErkJggg==";
-$x: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOHB4IiBoZWlnaHQ9IjdweCIgdmlld0JveD0iMCAwIDggNyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgPHBvbHlnb24gc3Ryb2tlPSJub25lIiBmaWxsPSIjMjYzMjM4IiBwb2ludHM9IjMgMyAyIDMgMiAyIDEgMiAxIDEgMCAxIDAgMCAyIDAgMiAxIDMgMSAzIDIgNSAyIDUgMSA2IDEgNiAwIDggMCA4IDEgNyAxIDcgMiA2IDIgNiAzIDUgMyA1IDQgNiA0IDYgNSA3IDUgNyA2IDggNiA4IDcgNiA3IDYgNiA1IDYgNSA1IDMgNSAzIDYgMiA2IDIgNyAwIDcgMCA2IDEgNiAxIDUgMiA1IDIgNCAzIDQiPjwvcG9seWdvbj4KPC9zdmc+";
-$y: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iN3B4IiBoZWlnaHQ9IjdweCIgdmlld0JveD0iMCAwIDcgNyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxwb2x5Z29uIHN0cm9rZT0ibm9uZSIgZmlsbD0iIzI2MzIzOCIgcG9pbnRzPSI0IDYgMyA2IDMgNyAyIDcgMiA2IDEgNiAxIDUgMCA1IDAgMiAxIDIgMSAzIDIgMyAyIDQgMyA0IDMgMyA0IDMgNCAyIDUgMiA1IDEgNiAxIDYgMCA3IDAgNyAzIDYgMyA2IDQgNSA0IDUgNSA0IDUiPjwvcG9seWdvbj4KPC9zdmc+";
-$o: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjZweCIgdmlld0JveD0iMCAwIDYgNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxwb2x5Z29uIHN0cm9rZT0ibm9uZSIgZmlsbD0iIzI2MzIzOCIgcG9pbnRzPSI1IDAgNSAxIDYgMSA2IDUgNSA1IDUgNiAxIDYgMSA1IDAgNSAwIDEgMSAxIDEgMCI+PC9wb2x5Z29uPgo8L3N2Zz4=";
-$q: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjlweCIgdmlld0JveD0iMCAwIDYgOSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPGcgZmlsbD0iIzFBMkMzNCI+Cjxwb2x5Z29uIHBvaW50cz0iMyA0IDMgMyA0IDMgNCAxIDIgMSAyIDMgMCAzIDAgMSAxIDEgMSAwIDUgMCA1IDEgNiAxIDYgMyA1IDMgNSA0IDQgNCA0IDYgMiA2IDIgNCI+PC9wb2x5Z29uPgo8cmVjdCB4PSIyIiB5PSI3IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIj48L3JlY3Q+CjwvZz4KPC9zdmc+";
-
-
+// mixins
 @mixin ch($c: $g2, $s: 1px, $b: $wh) {
 	background-color: $b;
-	background-image: linear-gradient(
-			45deg,
-			$c 25%,
-			transparent 25%,
-			transparent 75%,
-			$c 75%,
-			$c
-		),
+	background-image: linear-gradient(45deg, $c 25%, transparent 25%, transparent 75%, $c 75%, $c), 
 		linear-gradient(45deg, $c 25%, transparent 25%, transparent 75%, $c 75%, $c);
-	background-size: $s * 2 $s * 2;
+	background-size: $s*2 $s*2;
 	background-position: 0 0, $s $s;
 }
 @mixin bt($w, $d: default, $c: true) {
@@ -50,59 +30,41 @@ $q: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjlweCIgdmlld0Jve
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding-bottom: $w * 0.5;
+		padding-bottom: $w*.5;
 	} @else {
-		padding: $w * 2;
+		padding: $w*2;
 	}
 	z-index: 4;
 	background: $g2;
 }
 @mixin sh($w, $d: default) {
 	@if $d == default {
-		box-shadow: inset #{-$w * 0.5} #{-$w * 0.5} 0 0 $bl,
-			inset #{$w * 0.5} #{$w * 0.5} 0 0 $wh, inset #{-$w} #{-$w} 0 0 $g3,
-			inset $w $w 0 0 $g1;
+		box-shadow: inset #{-$w*.5} #{-$w*.5} 0 0 $bl, inset #{$w*.5} #{$w*.5} 0 0 $wh, inset #{-$w} #{-$w} 0 0 $g3, inset $w $w 0 0 $g1;
 	} @else if $d == window {
-		box-shadow: inset #{-$w * 0.5} #{-$w * 0.5} 0 0 $bl,
-			inset #{$w * 0.5} #{$w * 0.5} 0 0 $g1, inset #{-$w} #{-$w} 0 0 $g3,
-			inset $w $w 0 0 $wh;
+		box-shadow: inset #{-$w*.5} #{-$w*.5} 0 0 $bl, inset #{$w*.5} #{$w*.5} 0 0 $g1, inset #{-$w} #{-$w} 0 0 $g3, inset $w $w 0 0 $wh;
 	} @else if $d == button {
-		box-shadow: inset #{-$w * 0.5} #{-$w * 0.5} 0 0 $bl,
-			inset #{$w * 0.5} #{$w * 0.5} 0 0 $wh, inset #{-$w} #{-$w} 0 0 $g3,
-			inset $w $w 0 0 $g2;
-		padding-bottom: $w * 0.5;
-		padding-right: $w * 0.5;
+		box-shadow: inset #{-$w*.5} #{-$w*.5} 0 0 $bl, inset #{$w*.5} #{$w*.5} 0 0 $wh, inset #{-$w} #{-$w} 0 0 $g3, inset $w $w 0 0 $g2;
+		padding-bottom: $w*.5;
+		padding-right: $w*.5;
 	} @else if $d == button-reverse {
-		box-shadow: inset #{-$w * 0.5} #{-$w * 0.5} 0 0 $wh,
-			inset #{$w * 0.5} #{$w * 0.5} 0 0 $bl, inset #{-$w} #{-$w} 0 0 $g2,
-			inset $w $w 0 0 $g3;
-		padding-bottom: $w * 0.5;
-		padding-right: $w * 0.5;
+		box-shadow: inset #{-$w*.5} #{-$w*.5} 0 0 $wh, inset #{$w*.5} #{$w*.5} 0 0 $bl, inset #{-$w} #{-$w} 0 0 $g2, inset $w $w 0 0 $g3;
+		padding-bottom: $w*.5;
+		padding-right: $w*.5;
 	} @else if $d == button-strong {
-		box-shadow: inset #{-$w} #{-$w} 0 0 $bl, inset #{$w * 0.5} #{$w * 0.5} 0 0 $bl,
-			inset #{-$w * 1.5} #{-$w * 1.5} 0 0 $g3, inset $w $w 0 0 $wh;
-		padding-bottom: $w * 0.5;
+		box-shadow: inset #{-$w} #{-$w} 0 0 $bl, inset #{$w*.5} #{$w*.5} 0 0 $bl, inset #{-$w*1.5} #{-$w*1.5} 0 0 $g3, inset $w $w 0 0 $wh;
+		padding-bottom: $w*.5;
 	} @else if $d == button-strong-pressed {
-		box-shadow: inset #{-$w * 0.5} #{-$w * 0.5} 0 0 $bl,
-			inset #{$w * 0.5} #{$w * 0.5} 0 0 $bl, inset #{-$w} #{-$w} 0 0 $g3,
-			inset $w $w 0 0 $g3;
-		padding-bottom: $w * 0.5;
+		box-shadow: inset #{-$w*.5} #{-$w*.5} 0 0 $bl, inset #{$w*.5} #{$w*.5} 0 0 $bl, inset #{-$w} #{-$w} 0 0 $g3, inset $w $w 0 0 $g3;
+		padding-bottom: $w*.5;
 	} @else if $d == inside {
-		box-shadow: inset #{-$w * 0.5} #{-$w * 0.5} 0 0 $wh,
-			inset #{$w * 0.5} #{$w * 0.5} 0 0 $g3, inset #{-$w} #{-$w} 0 0 $g2,
-			inset $w $w 0 0 $bl;
+		box-shadow: inset #{-$w*.5} #{-$w*.5} 0 0 $wh, inset #{$w*.5} #{$w*.5} 0 0 $g3, inset #{-$w} #{-$w} 0 0 $g2, inset $w $w 0 0 $bl;
 		padding: $w;
 	} @else if $d == inset {
-		box-shadow: inset #{-$w * 0.5} #{-$w * 0.5} 0 0 $wh,
-			inset #{$w * 0.5} #{$w * 0.5} 0 0 $g3;
+		box-shadow: inset #{-$w*.5} #{-$w*.5} 0 0 $wh, inset #{$w*.5} #{$w*.5} 0 0 $g3;
 	} @else if $d == hide {
-		box-shadow: inset #{-$w * 0.5} 0 0 0 $bl,
-			inset #{$w * 0.5} #{$w * 0.5} 0 0 $wh, inset #{-$w} 0 0 0 $g3,
-			inset $w $w 0 0 $g1;
+		box-shadow: inset #{-$w*.5} 0 0 0 $bl, inset #{$w*.5} #{$w*.5} 0 0 $wh, inset #{-$w} 0 0 0 $g3, inset $w $w 0 0 $g1;
 	} @else if $d == fieldset {
-		box-shadow: inset #{-$w * 0.5} #{-$w * 0.5} 0 0 $wh,
-			inset #{$w * 0.5} #{$w * 0.5} 0 0 $g3, inset #{-$w} #{-$w} 0 0 $g3,
-			inset $w $w 0 0 $wh;
+		box-shadow: inset #{-$w*.5} #{-$w*.5} 0 0 $wh, inset #{$w*.5} #{$w*.5} 0 0 $g3, inset #{-$w} #{-$w} 0 0 $g3, inset $w $w 0 0 $wh;
 	}
 }
 @mixin nb {
@@ -121,8 +83,7 @@ $q: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjlweCIgdmlld0Jve
 	align-items: center;
 	position: relative;
 	width: 116px;
-	&:before,
-	&:after {
+	&:before, &:after {
 		width: 48px;
 		height: 48px;
 	}
@@ -158,9 +119,7 @@ $q: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjlweCIgdmlld0Jve
 }
 
 // base styles
-*,
-*:before,
-*:after {
+*, *:before, *:after {
 	cursor: default;
 	box-sizing: border-box;
 	image-rendering: pixelated;
@@ -175,18 +134,11 @@ $q: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjlweCIgdmlld0Jve
 }
 *:not(textarea, input) {
 	user-select: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-*:focus {
-	outline: none;
-}
-::selection {
-	background: none;
-}
-body,
-html {
-	height: 100%;
-}
+*:focus { outline: none; }
+::selection { background: none; }
+body, html { height: 100%; }
 body {
 	margin: 0;
 	background-color: $bg;
@@ -225,21 +177,16 @@ textarea {
 }
 
 // menu and label styles
-menu,
-ul:not(.information ul),
-ol {
+menu, ul:not(.information ul), ol {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 .underline {
 	> li {
-		> a,
-		> label {
+		> a, > label {
 			&:not(.no-line) {
-				&,
-				> span,
-				.line {
+				&, > span, .line {
 					@include fl;
 				}
 				> span span:not(.line) {
@@ -254,10 +201,8 @@ ol {
 		}
 	}
 }
-label,
-a {
-	&:before,
-	&:after {
+label, a {
+	&:before, &:after {
 		content: "";
 		background-position: center center;
 		background-size: contain;
@@ -282,8 +227,7 @@ label[tabindex] {
 		mask-size: cover;
 	}
 	&[tabindex] {
-		&:active,
-		&:focus {
+		&:active, &:focus {
 			&:after {
 				opacity: 1;
 			}
@@ -310,14 +254,7 @@ li:hover > .label-nested {
 }
 
 // icons
-$icons: folder-programs, folder-documents, settings, find, help, run, shut-down,
-	notepad, folder-explorer, document-text, control-panel, folder-printers,
-	desktop, computer, disk, diskette, folder, recycle-bin, inbox, program,
-	program-config, document-windows, hardware, add-programs, date-time,
-	document-misc, document-config, document-font, grpconv, folder-fonts-link,
-	computer-display, modems, keyboard, internet, joystick, mouse, multimedia,
-	network, passwords, battery, regional, folder-printers-link, computer-sounds,
-	computer-mouse, document-printer, printer, volume, wordpad;
+$icons: folder-programs, folder-documents, settings, find, help, run, shut-down, notepad, folder-explorer, document-text, control-panel, folder-printers, desktop, computer, disk, diskette, folder, recycle-bin, inbox, program, program-config, document-windows, hardware, add-programs, date-time, document-misc, document-config, document-font, grpconv, folder-fonts-link, computer-display, modems, keyboard, internet, joystick, mouse, multimedia, network, passwords, battery, regional, folder-printers-link, computer-sounds, computer-mouse, document-printer, printer, volume, wordpad;
 @each $icon in $icons {
 	.label-#{$icon} {
 		&:before {
@@ -392,8 +329,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 		&:active {
 			@include bt(3px, button-strong-pressed);
 		}
-		&:focus,
-		&:active {
+		&:focus, &:active {
 			span {
 				border-color: $bl;
 				color: $bl;
@@ -423,8 +359,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 		margin-top: 40px;
 	}
 	&[tabindex] {
-		&:active,
-		&:focus {
+		&:active, &:focus {
 			span {
 				background: $mauve;
 				color: white;
@@ -438,8 +373,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 }
 
 // windows and alerts
-#windows,
-#alerts {
+#windows, #alerts {
 	display: grid;
 	place-items: center;
 	position: absolute;
@@ -449,8 +383,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 	height: calc(100% + 44px);
 	padding-bottom: 44px;
 }
-.window,
-.alert {
+.window, .alert {
 	@include bt(3px, window, false);
 	opacity: 0;
 	visibility: hidden;
@@ -475,16 +408,14 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 .alert-nav {
 	background-color: $slate;
 }
-.window-nav,
-.alert-nav {
+.window-nav, .alert-nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: 28px;
 	padding: 0 3px;
 	color: white;
-	&:before,
-	&:after {
+	&:before, &:after {
 		content: unset;
 	}
 	h3 {
@@ -539,8 +470,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 				}
 			}
 			&.maximize {
-				&:before,
-				&:after {
+				&:before, &:after {
 					content: "";
 					display: block;
 					position: absolute;
@@ -594,8 +524,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 			padding: 0 10px;
 			text-decoration: none;
 			color: $iron;
-			&:before,
-			&:after {
+			&:before, &:after {
 				content: unset;
 			}
 			&:hover {
@@ -628,16 +557,14 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 		}
 		li {
 			&:hover {
-				> label,
-				> a {
+				> label, > a {
 					background-color: $slate;
 					color: white;
 				}
 			}
 			label:not(.label-check) {
 				display: block;
-				&:before,
-				&:after {
+				&:before, &:after {
 					content: unset;
 				}
 			}
@@ -646,8 +573,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 				align-items: center;
 				align-content: center;
 			}
-			> a,
-			> label {
+			> a, > label {
 				padding-left: 32px;
 				line-height: 28px;
 				&:hover {
@@ -803,8 +729,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 			height: 24px;
 			margin-right: 6px;
 		}
-		&:active,
-		&:focus {
+		&:active, &:focus {
 			span {
 				background: $mauve;
 				color: white;
@@ -824,8 +749,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 		height: 12.5px;
 		box-shadow: inset -1.5px -1.5px 0 0 $g3, inset 1.5px 1.5px 0 0 $g3;
 		background-color: white;
-		&:before,
-		&:after {
+		&:before, &:after {
 			display: block;
 			position: absolute;
 			background-color: $bl;
@@ -875,12 +799,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 	z-index: -1;
 }
 @keyframes blink {
-	from {
-		opacity: 1;
-	}
-	to {
-		opacity: 0;
-	}
+	from { opacity: 1 } to { opacity: 0 }
 }
 #alert-blue-screen {
 	opacity: 0;
@@ -896,14 +815,12 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 		max-width: 610px;
 		padding: 20px;
 	}
-	h3,
-	p {
+	h3, p {
 		font-weight: bold;
 		font-size: 18px;
 		line-height: 1.4;
 	}
-	h3,
-	p:last-child {
+	h3, p:last-child {
 		text-align: center;
 	}
 	h3 span {
@@ -914,7 +831,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 	}
 	.blink {
 		display: inline-block;
-		animation: blink 1s cubic-bezier(1, 0, 0, 1) infinite forwards;
+		animation: blink 1s cubic-bezier(1,0,0,1) infinite forwards;
 	}
 }
 .alert-inside {
@@ -940,8 +857,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 #window-welcome {
 	.window-inside {
 		height: 60vh;
-		@media screen and (min-width: 568px) and (max-height: 450px),
-			screen and (min-width: 768px) {
+		@media screen and (min-width: 568px) and (max-height: 450px), screen and (min-width: 768px) {
 			width: 500px;
 			height: 260px;
 		}
@@ -978,9 +894,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 		height: 100%;
 		padding: 20px;
 		line-height: 1.4;
-		h3,
-		p,
-		ul {
+		h3, p, ul {
 			margin: 1em 0 0;
 		}
 		h3:first-child {
@@ -1038,10 +952,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 			margin-left: -3px;
 			transform: translateX(-3px);
 		}
-		&:before,
-		&:after,
-		span:before,
-		span:after {
+		&:before, &:after, span:before, span:after {
 			content: "";
 			display: block;
 			position: absolute;
@@ -1063,8 +974,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 			box-shadow: inset -1.5px 0 0 0 $g3;
 		}
 		span {
-			&:before,
-			&:after {
+			&:before, &:after {
 				top: 1.5px;
 				width: 1.5px;
 				height: 1.5px;
@@ -1075,7 +985,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 			}
 			&:after {
 				right: 1.5px;
-				background-color: $bl;
+				background-color: $bl;;
 			}
 		}
 	}
@@ -1167,8 +1077,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 				}
 			}
 		}
-		.start-menu,
-		.start-menu-outline {
+		.start-menu, .start-menu-outline {
 			bottom: 1px;
 			left: 4px;
 			width: calc(100% - 8px);
@@ -1216,8 +1125,7 @@ $large-icons: taskbar, customize-start-menu, recycle-bin-folder;
 			align-items: center;
 			margin-top: 32px;
 			position: relative;
-			&:before,
-			&:after {
+			&:before, &:after {
 				display: block;
 				width: 20px;
 				height: 20px;
@@ -1363,10 +1271,8 @@ $options: always-on-top, auto-hide, show-small-icons, show-clock;
 		}
 	}
 }
-#option-show-small-icons:checked ~ .window-inside .preview,
-#global-option-show-small-icons:checked ~ main #start-menu {
-	$small-icons: folder-programs, folder-documents, settings, find, help, run,
-		shut-down;
+#option-show-small-icons:checked ~ .window-inside .preview, #global-option-show-small-icons:checked ~ main #start-menu {
+	$small-icons: folder-programs, folder-documents, settings, find, help, run, shut-down;
 	@each $icon in $small-icons {
 		.label-#{$icon} {
 			&:before {
@@ -1382,8 +1288,7 @@ $options: always-on-top, auto-hide, show-small-icons, show-clock;
 			&:last-child {
 				padding-top: 8px;
 			}
-			> a,
-			> label {
+			> a, > label {
 				height: 34px;
 				width: 175px;
 				&:before {
@@ -1434,8 +1339,7 @@ $options: always-on-top, auto-hide, show-small-icons, show-clock;
 	.window-content {
 		display: flex;
 		flex-wrap: wrap;
-		h4,
-		h5 {
+		h4, h5 {
 			@include nb;
 			@include sh(3px, inset);
 			margin: 0;
@@ -1548,8 +1452,7 @@ $windows: welcome, taskbar, printers, control-panel, computer, notepad, explorer
 				width: calc(100vw - 12px) !important;
 				height: calc(100vh - 44px - 12px) !important;
 				.maximize {
-					&:before,
-					&:after {
+					&:before, &:after {
 						width: 9px;
 						height: 9px;
 					}
@@ -1599,8 +1502,7 @@ $windows: welcome, taskbar, printers, control-panel, computer, notepad, explorer
 						margin-bottom: 6px;
 						margin-right: 0;
 					}
-					&:active,
-					&:focus {
+					&:active, &:focus {
 						span {
 							background: $mauve;
 							color: white;
@@ -1619,9 +1521,9 @@ $windows: welcome, taskbar, printers, control-panel, computer, notepad, explorer
 				&:before {
 					background-image: url("#{$url}#{$icon}.png");
 				}
-			}
 		}
 	}
+}
 }
 .menu-small-icons:checked ~ .window-inside {
 	.label-check.label-small-icons:before {
@@ -1680,15 +1582,11 @@ $toggles: computer, disk, program-files, windows;
 	}
 }
 
-$explorer-panels: desktop, computer, disk, dos, program-files, windows,
-	control-panel, printers, recycle-bin;
+$explorer-panels: desktop, computer, disk, dos, program-files, windows, control-panel, printers, recycle-bin;
 @each $panel in $explorer-panels {
 	#explorer-#{$panel} {
 		&:checked ~ main #window-explorer {
-			.title-explorer-#{$panel},
-			.content-explorer-#{$panel},
-			.explorer-number-#{$panel},
-			.explorer-space-#{$panel} {
+			.title-explorer-#{$panel}, .content-explorer-#{$panel}, .explorer-number-#{$panel}, .explorer-space-#{$panel} {
 				visibility: visible;
 			}
 			.label-folder-small[for="explorer-#{$panel}"]:before {
@@ -1705,9 +1603,7 @@ $explorer-panels: desktop, computer, disk, dos, program-files, windows,
 
 // start menu
 #start {
-	&:focus,
-	&:active,
-	&:checked {
+	&:focus, &:active, &:checked {
 		~ main > .start-menu .label-start {
 			outline: 1px dotted $bl;
 			outline-offset: -6px;
@@ -1716,8 +1612,7 @@ $explorer-panels: desktop, computer, disk, dos, program-files, windows,
 			}
 		}
 	}
-	&:active,
-	&:checked {
+	&:active, &:checked {
 		~ main > .start-menu .label-start {
 			@include sh(3px, button-reverse);
 		}
@@ -1761,8 +1656,7 @@ $explorer-panels: desktop, computer, disk, dos, program-files, windows,
 	background-color: $g2;
 	box-shadow: inset 0 1.5px 0 0 $g2, inset 0 3px 0 0 $wh;
 	padding-top: 3px;
-	.menu-container,
-	.sub-menu {
+	.menu-container, .sub-menu {
 		@include bt(3px);
 		position: absolute;
 		padding: 4px;
@@ -1771,15 +1665,13 @@ $explorer-panels: desktop, computer, disk, dos, program-files, windows,
 		li {
 			position: relative;
 			&:hover {
-				> label,
-				> a {
+				> label, > a {
 					background-color: $slate;
 					color: white;
 				}
 			}
 		}
-		label,
-		a {
+		label, a {
 			display: flex;
 			align-items: center;
 			align-content: center;
@@ -1798,15 +1690,12 @@ $explorer-panels: desktop, computer, disk, dos, program-files, windows,
 			&.label-empty {
 				justify-content: center;
 				padding-left: 0;
-				&:before,
-				&:after {
+				&:before, &:after {
 					display: none;
 				}
 			}
-			&.label-disabled,
-			&.label-empty {
-				&,
-				&:hover {
+			&.label-disabled, &.label-empty {
+				&, &:hover {
 					color: #85888c;
 				}
 			}
@@ -1841,8 +1730,7 @@ $explorer-panels: desktop, computer, disk, dos, program-files, windows,
 				&:last-child {
 					border-top: 1.5px solid $wh;
 				}
-				> label,
-				> a {
+				> label, > a {
 					height: 50px;
 					&:before {
 						width: 48px;
@@ -1864,8 +1752,7 @@ $explorer-panels: desktop, computer, disk, dos, program-files, windows,
 			background-size: 24px 21px;
 		}
 	}
-	.label-start,
-	.tabs label {
+	.label-start, .tabs label {
 		@include bt(3px, button);
 		height: 34px;
 		padding: 0 6px !important;
@@ -1959,7 +1846,7 @@ $sc-wd: 24px;
 	height: $sc-wd;
 	background-color: $g2;
 	image-rendering: pixelated;
-	background-size: $sc-wd * 0.75 $sc-wd * 0.75;
+	background-size: $sc-wd*.75 $sc-wd*.75;
 	background-repeat: no-repeat;
 	background-position: center center;
 	&:active {
@@ -1977,18 +1864,10 @@ $sc-wd: 24px;
 	&:vertical:increment {
 		background-image: url($dn);
 	}
-	&:horizontal:increment:start {
-		display: none;
-	}
-	&:horizontal:decrement:end {
-		display: none;
-	}
-	&:vertical:increment:start {
-		display: none;
-	}
-	&:vertical:decrement:end {
-		display: none;
-	}
+	&:horizontal:increment:start { display: none; }
+	&:horizontal:decrement:end { display: none; }
+	&:vertical:increment:start { display: none; }
+	&:vertical:decrement:end { display: none; }
 	&:active {
 		border: 1.5px solid $g3;
 		box-shadow: none;
