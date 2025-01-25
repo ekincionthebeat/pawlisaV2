@@ -1,41 +1,69 @@
 "use client"
 
-import { FileTreeView } from "./components/sidebar/file-tree/FileTreeView"
+import dynamic from 'next/dynamic'
 import { Press_Start_2P } from "next/font/google"
 import { cn } from "@/lib/utils"
+import { WindowProvider } from './contexts/WindowContext'
+import { Suspense } from 'react'
 
+// Font yüklemesi için güvenli bir yaklaşım
 const pressStart2P = Press_Start_2P({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-press-start-2p",
+  preload: true,
+  display: 'swap'
 })
 
+// FileTreeView'u client-side'da dinamik olarak yükle
+const FileTreeView = dynamic(
+  () => import('./components/sidebar/file-tree/FileTreeView').then(mod => mod.FileTreeView),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="h-full w-full flex items-center justify-center">
+        <div className="text-white text-sm">Yükleniyor...</div>
+      </div>
+    )
+  }
+)
+
+// Sidebar bileşeni - Güvenli ve izole edilmiş
+function Sidebar() {
+  return (
+    <aside className="w-[340px] flex flex-col bg-[#09090b] border-r border-[#2a2a2c]">
+      <div className="flex-1 overflow-hidden border-b border-[#2a2a2c]">
+        <FileTreeView />
+      </div>
+    </aside>
+  )
+}
+
+// Ana layout bileşeni
 export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <div className="flex h-screen bg-[#09090b]">
-      {/* Sidebar */}
-      <aside className="w-[340px] flex flex-col bg-[#09090b] border-r border-[#2a2a2c]">
-        {/* File Tree */}
-        <div className="flex-1 overflow-hidden border-b border-[#2a2a2c]">
-          <FileTreeView />
-        </div>
-
-        {/* Alt Kısım */}
-        <div className="h-[100px]">
-          <h2 className="text-lg font-semibold px-4 py-2 text-white">Alt Kısım</h2>
-        </div>
-      </aside>
-
-      {/* Main Content */}
-      <main className="flex-1 overflow-auto bg-[#09090b] p-6">
-        <div className="h-full">
-          {children}
-        </div>
-      </main>
-    </div>
+    <WindowProvider>
+      <div className={cn(
+        "flex h-screen bg-[#09090b]",
+        pressStart2P.variable
+      )}>
+        <Sidebar />
+        <main className="flex-1 overflow-auto bg-[#09090b] p-6">
+          <div className="h-full">
+            <Suspense fallback={
+              <div className="h-full w-full flex items-center justify-center">
+                <div className="text-white text-sm">İçerik yükleniyor...</div>
+              </div>
+            }>
+              {children}
+            </Suspense>
+          </div>
+        </main>
+      </div>
+    </WindowProvider>
   )
 }

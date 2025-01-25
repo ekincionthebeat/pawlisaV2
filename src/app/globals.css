@@ -18,4 +18,56 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+}
+
+/* Windows 95 Piksel Art Teması */
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.text-shadow-win95 {
+  text-shadow: 1px 1px #000000;
+}
+
+/* Scrollbar Windows 95 Stili */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+  background: #c0c0c0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border: 2px solid #c0c0c0;
+  box-shadow: inset -1px -1px #000000, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;
+}
+
+::-webkit-scrollbar-button {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #c0c0c0;
+  box-shadow: inset -1px -1px #000000, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;
+}
+
+::-webkit-scrollbar-button:vertical:start {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 4L4 8H12L8 4Z' fill='black'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-button:vertical:end {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 12L12 8H4L8 12Z' fill='black'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-button:horizontal:start {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 8L8 12V4L4 8Z' fill='black'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-button:horizontal:end {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 8L8 4V12L12 8Z' fill='black'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-corner {
+  background: #c0c0c0;
 } 
